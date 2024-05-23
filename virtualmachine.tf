@@ -16,7 +16,7 @@ resource "azurerm_subnet" "internal" {
   address_prefixes     = var.azurerm_subnet_address_prefixes
 }
 
-
+/*
 resource "azurerm_network_interface" "main" {
   for_each            = local.virtual_machines_map
   name                = each.value.name
@@ -28,7 +28,7 @@ resource "azurerm_network_interface" "main" {
     subnet_id                     = azurerm_subnet.internal[each.key].id
     private_ip_address_allocation = var.azurerm_network_interface_rivate_ip_address_allocation
   }
-}
+}*/
 
 
 resource "azurerm_virtual_machine" "main" {
