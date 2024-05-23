@@ -1,4 +1,4 @@
-resource "azurerm_resource_group" "regis-jean-rg" {
-  name     = "regis-jean-rg-test"
+resource "azurerm_resource_group" "cloud_2" {
+  name     = "cloud_2_test"
   location = "West Europe"
 }
