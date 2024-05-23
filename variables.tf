@@ -90,7 +90,7 @@ variable "azurerm_network_interface_rivate_ip_address_allocation" {
   type = string
   default = "Dynamic"
 }
-
+/*
 resource "azurerm_network_interface" "main" {
   name                = "${var.prefix}-nic"
   location            = azurerm_resource_group.cloud_2.location
@@ -101,5 +101,5 @@ resource "azurerm_network_interface" "main" {
     subnet_id                     = azurerm_subnet.internal.id
     private_ip_address_allocation = "Dynamic"
   }
-}
+}*/
 
