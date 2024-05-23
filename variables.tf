@@ -15,18 +15,6 @@ variable "tenant_id"{
 //
 //
 
-/*
-
-variable "prefix" {
-  default = "tfvmex"
-}
-
-variable "nameofmyazurermrg" {
-  type = string
-  default = "regis-jean-rg-test"
-}
-*/
-
 //
 //
 // virtual network variables
@@ -93,11 +81,10 @@ variable "azurerm_network_interface_rivate_ip_address_allocation" {
   default = "Dynamic"
 }
 
-/*
 resource "azurerm_network_interface" "main" {
   name                = "${var.prefix}-nic"
-  location            = azurerm_resource_group.regis-jean-rg.location
-  resource_group_name = azurerm_resource_group.regis-jean-rg.name
+  location            = azurerm_resource_group.cloud_2.location
+  resource_group_name = azurerm_resource_group.cloud_2.name
 
   ip_configuration {
     name                          = "testconfiguration1"
@@ -105,4 +92,4 @@ resource "azurerm_network_interface" "main" {
     private_ip_address_allocation = "Dynamic"
   }
 }
-*/
+
