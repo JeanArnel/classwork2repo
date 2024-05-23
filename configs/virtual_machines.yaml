@@ -1,0 +1,30 @@
+virtual_machines:
+  - name: "sixthvm"
+    location: "West Europe"
+    size: "Standard_DS1_v2"
+    tags:
+      environment: "staging"
+
+  - name: "seventhvm"
+    location: "West Europe"
+    size: "Standard_DS1_v2"
+    tags:
+      environment: "staging"
+
+  - name: "eighthvm"
+    location: "West Europe"
+    size: "Standard_DS1_v2"
+    tags:
+      environment: "staging"
+
+  - name: "ninthvm"
+    location: "West Europe"
+    size: "Standard_DS1_v2"
+    tags:
+      environment: "staging"
+
+  - name: "tenthvm"
+    location: "West Europe"
+    size: "Standard_DS1_v2"
+    tags:
+      environment: "staging"
