@@ -9,4 +9,4 @@ subnet_prefix = ["10.0.2.0/24"]
   os_sku       = "22_04-lts"
   os_version   = "latest"
 }
-}
+
