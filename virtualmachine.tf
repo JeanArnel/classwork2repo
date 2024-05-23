@@ -36,7 +36,7 @@ resource "azurerm_virtual_machine" "main" {
   name                  = each.value.name
   location              = each.value.location
   resource_group_name   = azurerm_resource_group.cloud_2.name
-  network_interface_ids = azurerm_network_interface.main[each.key].id
+  network_interface_ids = [azurerm_network_interface.main.id]
   vm_size               = "Standard_DS1_v2"
 
   # Uncomment this line to delete the OS disk automatically when deleting the VM
